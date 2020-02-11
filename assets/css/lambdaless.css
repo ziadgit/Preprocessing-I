@@ -1,4 +1,3 @@
-
 /* Example Syntax
 
 @width: 10px;
@@ -48,50 +47,36 @@
   }
 
   */
-
-@background-color: #fffffa;
-@text-color: #1A237E;
-@text-color: #000000;
-
-ul{
-  @text-color: #fff;
+ul {
   background-color: #03A9F4;
   padding: 10px;
   list-style: none;
-
-  li{
-    color: @text-color;
-    border-radius: 3px;
-    margin: 10px 0;
-  }
 }
-
-p{
-  background-color: @background-color;
-  color: @text-color;
+ul li {
+  color: #fff;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+p {
+  background-color: #fffffa;
+  color: #000000;
   padding: 15px;
 }
-
-ul{
-  background-color: @background-color;
+ul {
+  background-color: #fffffa;
 }
-
-li{
-  color: @text-color;
+li {
+  color: #000000;
 }
-
-#circle(@size: 25px){
-    background-color: #4CAF50;
-    border-radius: 100%;
-  
-    width: @size;
-    height: @size;
-  }
-  
-  #small-circle{
-    #circle
-  }
-  
-  #big-circle{
-    #circle(100px)
-  }
+#small-circle {
+  background-color: #4CAF50;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+#big-circle {
+  background-color: #4CAF50;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
